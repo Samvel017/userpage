@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-bar">
+        <div class="profile-img">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+            alt=""
+          />
+        </div>
+        <div class="profile-about">
+          <h3 class="profile-titles">ABOUT ME</h3>
+          <ul>
+            <li><span>Name: </span><span>Samvel</span></li>
+            <li><span>Surname: </span><span>Hovhannisyan</span></li>
+            <li>
+              <span>Profession։ </span><span>Front-End Web Developer</span>
+            </li>
+            <li><span>Birth Place: </span><span>Yerevan, Armenia</span></li>
+            <li><span>Age: </span><span>20</span></li>
+          </ul>
+        </div>
+        <div class="profile-contact">
+          <h3 class="profile-titles">CONTACT</h3>
+          <ul>
+            <li>
+              <span><i class="fas fa-phone-alt"></i></span
+              ><span>(+374)91-01-11-97</span>
+            </li>
+            <li>
+              <span><i class="fas fa-envelope"></i></span
+              ><span>samo.hovh3@mail.ru</span>
+            </li>
+            <li>
+              <span><i class="fab fa-linkedin-in"></i></span
+              ><span
+                ><a
+                  href="https://www.linkedin.com/in/samvel-hovhannisyan-91739a224/"
+                  >Linkedin Profile</a
+                ></span
+              >
+            </li>
+            <li>
+              <span><i class="fab fa-github"></i></span
+              ><span
+                ><a href="https://github.com/Samvel017">GitHub Profile</a></span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile-main">
+        <section class="main-section">
+          <div class="todo-section">
+            <h2>Todo App</h2>
+            <div class="todo-app">
+              <input type="text" placeholder="Add here..." class="todo-input" />
+              <div class="todo-buttons">
+                <button class="btnAdd btn">Add</button>
+                <button class="btnRemove btn">Remove</button>
+              </div>
+            </div>
+            <div class="todo-nav">
+              <ul>
+                <li>
+                  <button class="todo-tab active-btn" data-tab="#list1">
+                    All
+                  </button>
+                </li>
+                <li>
+                  <button class="todo-tab" data-tab="#list2">Important</button>
+                </li>
+                <li>
+                  <button class="todo-tab" data-tab="#list3">
+                    Unimportant
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="todo-list">
+              <div class="page list-all active-tab" id="list1">
+                <div class="list"></div>
+                <div class="pagination"></div>
+              </div>
+              <div class="page list-important" id="list2">
+
+              </div>
+              <div class="page list-unimportant" id="list3">
+
+              </div>
+            </div>
+          </div>
+          <div class="graphic-info">
+            <h3>Workload of the day</h3>
+            <div class="load-block">
+              <div class="line"></div>
+
+            </div>
+            <div class="percent">
+              <span class="percent-num">0%</span>
+            </div>
+          </div>
+        </section>
+        <section class="main-bottom-section">
+          <h1>COMING SOON...</h1>
+        </section>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
