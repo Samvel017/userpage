@@ -427,4 +427,71 @@
             transform: scale(1.05);
   }
 }
+
+@media screen and (max-width: 1152px) {
+  .container .profile-bar {
+    max-width: 810px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container .profile-main .main-section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .profile-main .main-section .todo-section {
+    max-width: 400px;
+  }
+  .container .profile-main .main-section .graphic-info {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container .profile-main .main-section .todo-section {
+    min-height: 300px;
+    max-width: 810px;
+  }
+  .container .profile-main .main-section .graphic-info {
+    max-width: 810px;
+    min-height: 300px;
+  }
+  .graphic-info .load-block {
+    width: 90%;
+    margin: 0 auto 45px auto;
+  }
+  .container .profile-main .main-section .todo-section .todo-app {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container .profile-main .main-section .todo-section .todo-app .todo-input {
+    max-width: 550px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .main-bottom-section h1 {
+    font-size: 30px;
+  }
+  .container .profile-main .main-section .todo-section {
+    min-width: 0;
+  }
+  .container .profile-main .main-section .graphic-info {
+    min-width: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
